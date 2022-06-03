@@ -7,7 +7,8 @@ jobs:
       steps:
         - run:
             name: "trial"
-            command: sudo apt update && sudo apt install lynx 
+            command: sudo apt update && sudo apt install lynx && lynx -dont_wrap_pre -dump
+
 
 workflows:
     version: 2.1
